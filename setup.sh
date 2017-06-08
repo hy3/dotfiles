@@ -1,6 +1,9 @@
  #!/bin/bash
 
-dotfiles=(.vimrc .vim)
+dotfiles=(.bash_profile .bashrc .vimrc .vim)
+if [ "$(uname)" != 'Darwin' ]; then
+    dotfiles+=(.dir_colors)
+fi
 
 basedir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 
