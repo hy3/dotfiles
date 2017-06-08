@@ -9,7 +9,6 @@ fi
 if [ "$(uname)" = 'Darwin' ]; then
     export LSCOLORS=gxfxcxdxbxegedabagacad
     alias ls='ls -G'
-    alias vi='vim'
 else
     eval `dircolors ~/.dir_colors`
     alias ls='ls --color=auto'
