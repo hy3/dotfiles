@@ -77,7 +77,6 @@ set wildmode=list:longest
 nnoremap j gj
 nnoremap k gk
 " カラースキーム設定
-let g:hybrid_use_iTerm_colors = 1
 syntax on
 
 " Tab系
