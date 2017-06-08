@@ -8,6 +8,7 @@ fi
 # User specific aliases and functions
 if [ "$(uname)" = 'Darwin' ]; then
     alias ls='ls -G'
+    alias vi='vim'
 else
     eval `dircolors ~/.dir_colors`
     alias ls='ls --color=auto'
