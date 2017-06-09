@@ -45,7 +45,8 @@ endif
 
 " ファイルタイプ追加
 augroup FileTypes
-  autocmd BufRead,BufNewFile *.ts set filetype=typescript
+  autocmd BufNewFile,BufRead *.ts set filetype=typescript
+  autocmd BufNewFile,BufRead *.vue set filetype=html
 augroup END
 
 
