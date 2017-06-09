@@ -96,6 +96,8 @@ set expandtab
 set tabstop=4
 " 行頭でのTab文字の表示幅
 set shiftwidth=4
+" FileType別のインデント設定を有効化
+filetype plugin indent on
 
 
 " 検索系
