@@ -12,6 +12,8 @@ hook_add = '''
 '''
 
 # JavaScript
+
+[[plugins]]
 repo = 'jason0x43/vim-js-indent'
 on_ft = ['javascript', 'typescript', 'html']
 hook_add = '''
