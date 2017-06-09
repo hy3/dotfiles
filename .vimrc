@@ -25,8 +25,8 @@ if dein#load_state(s:dein_dir)
 
   " プラグインリストを収めた TOML ファイル
   let g:rc_dir    = expand('~/.vim/rc')
-  let s:toml      = g:rc_dir . '/dein.toml'
-  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
+  let s:toml      = g:rc_dir . '/plugins.toml'
+  let s:lazy_toml = g:rc_dir . '/lazy_plugins.toml'
 
   " TOML を読み込み、キャッシュしておく
   call dein#load_toml(s:toml,      {'lazy': 0})
