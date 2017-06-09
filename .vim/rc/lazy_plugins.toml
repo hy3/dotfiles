@@ -1,3 +1,18 @@
+# 言語系
+
+## Go
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_add = '''
+  let g:go_highlight_functions = 1
+  let g:go_highlight_methods = 1
+  let g:go_highlight_structs = 1
+'''
+
+## Python
+
 [[plugins]]
 repo = 'hdima/python-syntax'
 on_ft = 'python'
@@ -13,3 +28,15 @@ hook_add = '''
   let g:indentLine_char = '│'
   let g:indentLine_color_term = 239
 '''
+
+## TOML
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+## TypeScript
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim.git'
+on_ft = 'typescript'

@@ -43,6 +43,12 @@ if dein#check_install()
 endif
 
 
+" ファイルタイプ追加
+augroup FileTypes
+  autocmd BufRead,BufNewFile *.ts set filetype=typescript
+augroup END
+
+
 " setting
 " 文字コードをUFT-8に設定
 set fenc=utf-8
