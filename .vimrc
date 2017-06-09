@@ -62,6 +62,8 @@ set autoread
 set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
+" バックスペースが効かなくなるのを回避する
+set backspace=indent,eol,start
 
 
 " 見た目系
