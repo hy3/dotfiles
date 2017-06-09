@@ -103,8 +103,3 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
-
-
-" Python関連
-" 保存時の構文自動チェック
-let g:syntastic_python_checkers = ['pyflakes', 'pep8']
