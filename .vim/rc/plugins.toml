@@ -12,3 +12,9 @@ hook_add = '''
   au MyAutoCmd VimEnter * nested colorscheme hybrid
 '''
 
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'osyo-manga/vim-precious'
+depends = ['Shougo/context_filetype.vim']
