@@ -11,6 +11,13 @@ hook_add = '''
   let g:go_highlight_structs = 1
 '''
 
+# JavaScript
+repo = 'jason0x43/vim-js-indent'
+on_ft = ['javascript', 'typescript', 'html']
+hook_add = '''
+  let g:js_indent_typescript = 1
+'''
+
 ## Python
 
 [[plugins]]
