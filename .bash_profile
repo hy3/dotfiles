@@ -14,4 +14,10 @@ if [ -d $GOPATH ]; then
     export GOPATH
 fi
 
+export PYENV_ROOT=$HOME/.pyenv
+if [ -d $PYENV_ROOT ]; then
+    export PATH=$PATH:$PYENV_ROOT/shims
+    eval "$(pyenv init -)"
+fi
+
 export PATH
