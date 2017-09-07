@@ -1,3 +1,6 @@
+" 行番号がRetinaディスプレイで見えにくいので対策する
+autocmd ColorScheme * highlight LineNr ctermfg=242
+
 " dein関連
 if !&compatible
   set nocompatible
