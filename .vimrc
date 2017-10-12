@@ -102,6 +102,8 @@ set tabstop=4
 set shiftwidth=4
 " FileType別のインデント設定を有効化
 filetype plugin indent on
+" FileType別インデント設定
+autocmd FileType html setlocal sw=2 ts=2 et
 
 
 " 検索系
