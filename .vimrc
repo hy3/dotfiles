@@ -104,6 +104,7 @@ set shiftwidth=4
 filetype plugin indent on
 " FileType別インデント設定
 autocmd FileType html setlocal sw=2 ts=2 et
+autocmd FileType css setlocal sw=2 ts=2 et
 
 
 " 検索系
