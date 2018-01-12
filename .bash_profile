@@ -14,6 +14,11 @@ if [ -d $GOPATH ]; then
     export GOPATH
 fi
 
+export NODEBREW_ROOT=$HOME/.nodebrew
+if [ -d $NODEBREW_ROOT ]; then
+    export PATH=$NODEBREW_ROOT/current/bin:$PATH
+fi
+
 export PYENV_ROOT=$HOME/.pyenv
 if [ -d $PYENV_ROOT ]; then
     export PATH=$PATH:$PYENV_ROOT/shims
