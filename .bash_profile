@@ -35,3 +35,8 @@ if [ -d $PYENV_ROOT ]; then
 fi
 
 export PATH
+
+# Load local environment
+if [ -f ~/.bash_profile_local ]; then
+    . ~/.bash_profile_local
+fi
