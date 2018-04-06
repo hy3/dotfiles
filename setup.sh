@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 dotfiles=(.bash_profile .bashrc .vimrc .vim)
 if [ "$(uname)" != 'Darwin' ]; then
