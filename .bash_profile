@@ -32,6 +32,7 @@ if [ -d $PYENV_ROOT ]; then
     export PYENV_ROOT
     PATH=$PATH:$PYENV_ROOT/shims
     eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
 fi
 
 export PATH
