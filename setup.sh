@@ -1,6 +1,14 @@
 #!/bin/bash
 
-dotfiles=(.bash_profile .bashrc .vimrc .vim)
+dotfiles=(.vimrc .vim)
+
+if [ $SHELL == '/bin/zsh' ]; then
+    dotfiles+=(.zshrc)
+elif [ $SHELL == '/bin/bash' ]; then
+    dotfiles+=(.bash_profile)
+    dotfiles+=(.bashrc)
+fi
+
 if [ "$(uname)" != 'Darwin' ]; then
     dotfiles+=(.dir_colors)
 fi
