@@ -4,12 +4,10 @@ if [ -f /etc/zshrc ]; then
 fi
 
 # PATH settings
-PATH=$PATH:$HOME/bin
-
 GOPATH=$HOME/go
 if [ -d $GOPATH ]; then
     export GOPATH
-    PATH=$PATH:$GOPATH/bin
+    PATH=$GOPATH/bin:$PATH
 fi
 
 NODEBREW_ROOT=$HOME/.nodebrew
@@ -28,10 +26,12 @@ fi
 PYENV_ROOT=$HOME/.pyenv
 if [ -d $PYENV_ROOT ]; then
     export PYENV_ROOT
-    PATH=$PATH:$PYENV_ROOT/shims
+    PATH=$PYENV_ROOT/shims:$PATH
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
+
+PATH=$HOME/bin:$PATH
 
 export PATH
 
